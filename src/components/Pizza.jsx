@@ -88,7 +88,7 @@ function Pizza({id, imageUrl, name, types, sizes, price,cardItemsObj }) {
                         fill="white"
                         />
                     </svg>
-                    <span  >Dodać</span>
+                    <span  >Dodaj</span>
                     {
                         cardItemsObj[id]? <i>{cardItemsObj[id].items.length}</i>: null
                     }
