@@ -21,8 +21,8 @@
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.1s ease-in-out;
-      min-width: 134px;
       text-align: center;
+      white-space: nowrap;
       @include noselect();
 
       &:hover {
