@@ -27,7 +27,7 @@ function Card() {
             {
                 Object.keys(items).length === 0 ?
                 <div className="cart cart--empty">
-                    <h2>Koszyk jest <i>😕</i></h2>
+                    <h2>Koszyk jest pusty <i>😕</i></h2>
                     <p>
                         Najprawdopodobniej jeszcze nie zamówiłeś pizzy. <br/>       
                         Aby zamówić pizzę, przejdź do strony głównej.
