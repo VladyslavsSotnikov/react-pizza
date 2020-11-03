@@ -430,6 +430,18 @@ body {
       width: 300px;
       margin: 45px auto 60px;
     }
+    @media (max-width: 768px) {
+      width: auto;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+      img {
+        width: 200px;
+      }
+    }
 
     .button--black {
       padding: 12px 0 14px;
