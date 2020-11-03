@@ -29,10 +29,13 @@ function Home() {
 
     React.useEffect(() => {
         dispatch(setLoad(false))
-        axios.get(`http://localhost:3001/pizzas${category !== null? `?category=${category}&_sort=${sort}`:`?_sort=${sort}`}`).then(res=>{
-          dispatch(setPizzas(res.data))
-        } )
-    }, [dispatch,category, sort])
+        axios.get(
+            `/pizzas${category !== null? `?category=${category}&_sort=${sort}`:`?_sort=${sort}`}`
+            )
+            .then(res=>{
+                dispatch(setPizzas(res.data))
+            } )
+    }, [dispatch, category, sort])
 
     const categoryList = ['Z mięsem', 'Wegetariańska ', 'Grill', 'Na ostro','Tradycyjna']
     const sortList = [{name: 'popularności', type: 'rating'}, {name: 'cenie', type: 'price'}, {name: 'alfabetycznie', type: 'name'}]
