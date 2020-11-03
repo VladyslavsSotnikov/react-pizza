@@ -77,7 +77,7 @@ function Card() {
                             </svg>
                             <span>Wrócić</span>
                         </Link>
-                        <div className="button pay-btn" onClick = {() => alert('Dziękujemy za zakupy')}>
+                        <div className="button pay-btn" onClick = {() => alert('Dziękujemy za zakupy!')}>
                             <span>Zaplać</span>
                         </div>
                   </div>
