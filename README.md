@@ -9,3 +9,6 @@ Online shop - **React Pizza**
 - json-server
 - Axios
 - classnames
+
+**Link**
+[React-Pizza](https://react-pizza-vladyslav.herokuapp.com/)
