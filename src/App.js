@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header/>
-      <Route path = '/' exact ><Home  /></Route>
+      <Route path = '/' exact ><Home/></Route>
       <Route path = '/card' exact><Card /></Route>
     </div>
   );

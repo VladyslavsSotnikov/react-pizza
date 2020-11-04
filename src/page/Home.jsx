@@ -1,6 +1,6 @@
 import React from 'react'
 import {useSelector, useDispatch} from 'react-redux'
-import axios from 'axios'
+
 
 import Categories from '../components/Categories'
 import Sort from '../components/Sort'
@@ -8,7 +8,8 @@ import Pizza from '../components/Pizza'
 import SkeletonPizzas from '../components/SkeletonPizzas'
 
 import { setCategory} from '../redux/actions/filters'
-import {setPizzas, setLoad} from '../redux/actions/pizzas'
+import { getPizzasThunkMiddleWare } from '../redux/actions/pizzas'
+
 
 
 function Home() {
@@ -28,13 +29,7 @@ function Home() {
     }
 
     React.useEffect(() => {
-        dispatch(setLoad(false))
-        axios.get(
-            `/pizzas${category !== null? `?category=${category}&_sort=${sort}`:`?_sort=${sort}`}`
-            )
-            .then(res=>{
-                dispatch(setPizzas(res.data))
-            } )
+        dispatch(getPizzasThunkMiddleWare(category, sort))
     }, [dispatch, category, sort])
 
     const categoryList = ['Z mięsem', 'Wegetariańska ', 'Grill', 'Na ostro','Tradycyjna']
