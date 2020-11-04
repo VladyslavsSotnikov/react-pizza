@@ -6,7 +6,6 @@ import Home from './page/Home'
 import Card from './page/Card'
 
 function App() {
-
   return (
     <div className="wrapper">
       <Header/>
