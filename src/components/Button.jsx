@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-function Button({onClickAdd,className, children }) {
+function Button({ onClick, className, children }) {
     return (
-        <button className={className} onClick = {onClickAdd? () => onClickAdd(): null}>{children}</button>
+        <button className={className} onClick={onClick ? () => onClick() : null}>{children}</button>
     )
 }
 
